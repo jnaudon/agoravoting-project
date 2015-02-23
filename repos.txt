@@ -1,0 +1,13 @@
+agora-core-view
+agora_elections
+authapi
+agora-results
+agora-tools
+openstv
+agora-tally
+frestq
+election-orchestra
+verificatum
+agora-dev-box
+agora-verifier
+agora-airgap
