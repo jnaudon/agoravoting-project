@@ -7,7 +7,7 @@ openstv
 agora-tally
 frestq
 election-orchestra
-verificatum
+vfork
 agora-dev-box
 agora-verifier
 agora-airgap
