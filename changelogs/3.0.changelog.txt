@@ -1,0 +1,360 @@
+agora-dev-box
+#############
+
+60c01f1 Added sentry to manage authapi log
+8c230a8 Merge pull request #12 from stereoderevo/next
+4d1d65d Add a missing dollar sign
+16f3111 Update complete-deployment.md
+a66dbc3 Removing DNIE config, it's in dnie.conf file
+03b6581 renaming from verificatum to vfork
+db049c3 Update complete-deployment.md
+ce3dc74 Update complete-deployment.md
+db770ae Update complete-deployment.md
+7c102e5 Update complete-deployment.md
+a75d24a Allowed users customize virtual machines for a faster installation.
+f8632f9 Update complete-deployment.md
+40ff539 Only create DNIE config files when dnie_host is set
+12aae45 Fixed agora-core-view build execution
+d8808aa Repos in branch next
+867c27d Fixed verificatum.jar changin it by vfork.jar
+622bed7 Renaming verificatum to vfork
+7b0a039 Using vfork repo instead of verificatum
+1acdbcc using vfork
+37e0248 adding launchshell.sh handy script to authapi
+fd3bc0f improving how agora-core-view is deployed, so that we always have a correct deployment, even during building
+fe5ee5e adding screenrc config
+30312c9 Added publicURL replace in avConfig
+54fde4a Fixing nginx conf comment
+d3c821b Added dnie & fnmt auth configuration for ngnix
+9ec9648 Merge pull request #10 from Findeton/patch-7
+2ec8860 add some more info
+ecde886 Merge pull request #9 from leio10
+31f29f9 Merge pull request #8 from agora-dev-box
+fed8e4c Merge branch 'next' into fix_localconfs
+844ffcd Merge pull request #7 from Findeton
+4649a1b Merge pull request #6 from Findeton
+1f9bc87 Merge pull request #5 from Findeton
+2c007b9 Merge pull request #4 from Findeton/patch-4
+53546d7 Fix error with recent versions of Ansible
+c3d0a2a Fixed configuration examples doc for agora-tools.
+59963bc update census format
+b537fc1 update authapi credentials format
+5deb792 restart authapi supervisor in two steps
+fc24dba give supervisor time to restart AgoraElections
+
+agora-core-view
+###############
+
+d7d502b dashboard results: show percentages for resume
+bec4019 dashboard results: improve legibility
+3852b3e percentage over valid votes, show num total votes
+30891fc dashboard results: fix non zero totals
+48feabb fix percentages in dashboard results
+eb9693e gl i18n: minor changes
+5fb746c small loop theme color change in modal dialog for null vote confirmation
+8e95a7f add blank vote warning per question in case it is allowed
+0c24898 fix some colors in the default theme
+93a719e fixing warning in theme loop booth
+9ed2415 fixing avBooth fixed top bar color in theme loop
+d0f0d66 update i18n gl
+73fb58b adding column filter i18n in gl
+481d9e2 improving again dict fields
+a5cae1b loop theme: highlight links color and highlight code field on login screen
+a278925 minor typo fix
+a0d4d89 detect invalid-dni on user registration
+96660ce fixing question numbering in election view
+a487e18 fix dict fields with long words in admin census
+e12b3ab updating gl i18n
+bf9a639 small fix in loop's theme
+19d1a32 fixing html in option details
+ad887aa fixing ends with
+9efe9d4 Added refresh button to the census list
+589723c Added gallego
+719f51c cookies notification text visible in loop theme
+2905023 Added deactivate action to census management
+b64fd91 fix pairwise
+7eaa7e6 pairwise beta: fixing links and adding support for html chars
+dd50fb6 improving pairwise-beta support
+9561bcb adding support for duplicating election
+a0272d0 adding initial support for pairwise comparisons
+aaa0767 admin census: fixing the display of obligatory extra fields when creating a new election
+d95e702 admin census: readding overflow-x to censustable
+0fe6a49 admin census: fixing big height tables, this time for real
+ae76359 admin census: fix overflow-x
+8d012ee admin census: fixing horiz scrolling when table is too big
+01c819d improving bootstrap theme
+0b0c82c allow to reset the date and integrate correctly with backend
+67cd581 admin census: showing filter datetime as datetime instead of date only
+96f641b admin census: initial version of datetime filter and created datetime filtering in census, not working yet
+3f8f9d5 admin census: adding sorting/filtering to active column
+9786209 admin census: int id filtering now works, connected with the api
+d928dcf admin census: making columns filter watch work
+ad93b8b admin column-filters: swap sort icons
+0038144 admin census: starting work on table column-filters
+f35d4af minor color fix in dict census-field
+513667b removing collapsing console.log
+4b43db8 adding join date column
+b448426 loading correctly moment i18n
+6f336e9 removing console.logs in collapsing directive
+af58fdb admin census: now this really resolves the triplicated census during the first seconds of initialization
+2c57bd8 admin census: fixing colspan for table
+a89738d elections api: saving only new elections and setting the newElection bit
+4ce9515 admin census: improve activate action name
+202c9de add initial support for key-value private fields
+452436e Census activation management
+9594363 improving spanish i18n
+c642a8f admin auth: showing again auth code strings config, for open census registration
+cf06612 adding town logo
+8c1626e adding missing files in theme loop
+7096d68 initial loop theme
+01034a0 html error support in registration
+4e80b3e adding support for private fields
+626bcd6 admin census: making census filtering also work when creating the election
+71e7109 Added eu cookies notification plugin
+70105de Storing current editing election in a cookie
+f42e1b2 Initial dnie support. Not enabled yet
+2c23478 fix timeout debouncing in booth
+3480692 admin census: adding support for paginated filtering
+fe5d138 making export census work again, with progress bar and modal dialog
+14b5f24 admin census: showing in the gui if the user voted or not
+07a1a14 admin census: updating census when executing related actions
+c6fe00e admin census: making remove confirm dialog danger-red
+d7d5c97 admin census: fix selection being removed on scroll
+a520b8e adding confirm step to remove people from census
+8401f9b admin census: adding some purely aesthetic changes
+948db7f admin census: load census on scrolling
+fe5fe67 admin census: affix-top header block with no top-margin when affixed
+19f6075 admin questions: do not show edit icon on options if election is in non-editable mode
+2a82f5b admin create: adding text size limits to election creation checks
+f30a05d admin census: showing hlep text when census is empty and showing currently number of affected people in the actions button
+080fcd6 admin census: moving search to header-block and removing duplicated action
+a7686e6 moving add actions to action list
+5070ede remove duplicated public results link
+788b767 admin: convert census actions to action list
+9788f8b booth: final aestetic changes to accordion layout
+68491f8 small fixes to accordion layout
+3d59fa4 setting accordion as default question layout
+e34ef94 making accordion very flexible and removing other non-flexible layouts
+463e402 hide message editing in creation, for now
+05dc9ea booth: make audit the ballot smaller
+b3e3377 booth: fix step numbers
+fb681a5 change color no-js message to light gray, less in-your-face
+8f5c208 convert learn-more links into links to use guide
+713b6de admin: adding edit icon to candidates
+14b0846 admin: improving some help strings
+cabdb34 fixing typo
+756cba8 admin: changing a bit the style of question header
+82b988d census configuration: readding radio input icons in registration conf
+9639627 admin: allow to batch select and deselect people in census config
+d9dabd0 admin: autoexpand the question on question list view, when there's only one question
+28c0653 admin: do not show conditional-accordion and ahoram-primaries layouts, too specific and confusing to the user
+148aecc admin: ensure that an election starts with at least one question
+d78a8fd hidden elbasic layout and theme
+a1bbe5f improving login and adding option to resend codes
+09105e9 remove padding in login input fields in small screens
+ad111be being more strict with user input on code field
+7bc1860 small i18n fix
+9d6c1e7 showing voting system in results, and adding more info to borda counts
+fb6f1ba removing spaces in tlf numbers when doing a massive add
+ce007f3 add voterid to export census
+e961cbf fixing ahoramadrid issue #3
+f89dbc8 fixing ahoramadrid issue #1
+39b68d7 working on improving registration errors
+46281f8 Fixed NIE validation
+915b68c Closing divs correctly in accordion to fix filter
+f2af8f2 do not allow nonalcaldable be voted as such
+9aa1446 minor typo fix
+3e29635 small fix in dnd
+59a58de add dnd support to ahoram format
+5cc5f37 initial support for dnd
+19fa8da typo fix
+c938c90 convert select-all button in a deselect/select-all toggle button
+535c03e showing results for the new layouts
+510bbb6 fix page view
+ca64e1b fix img ng-src
+1c125a3 adding support for dni field
+edd418f working version of ahoram-primaries layout
+73c7c50 ahoram: adding ordering to review screen
+efa4516 changing conditional question and link
+bb0574c removing bold in titles of accordion-selected too
+a6ec8e0 ahoram: deterministic candidate image urls getter
+c5ba76f allow more questions after ahoram-primaries question layout
+78626be do not make accordion option titles bold, they can be large
+135552a ahoram: fix sorting
+e5b6bb6 ahoram: fix toggle selection
+323f45c ahoram-primaries: showing facepic
+4421c67 working on agoram-primaries layout
+b7f3023 starting work on ahoram-primaries layout
+831c91f booth: adding first version for conditional-accordion question layout, seems to work fine, no option reordering yet though
+ebdf883 adding optional details to accordion options
+2fb3e18 fix and use ng-src
+497a504 fixing problems with urls in answers
+a966567 improving hmac token management
+cdb4935 removing unnecesary ping. please review this @danigm
+4d6a840 using ng-src so that cpatcha is not retrieved if not needed
+818a055 extra fields: dont allow dnd on editing extra fields and improving placeholder
+e40a344 adding regexp support in extra fields
+88f89eb Updated plugin vars to make it easy the reload
+2b79186 admin: enabling more layouts
+2bcdfeb admin: allowing admin to dnd options in a question, to edit it and to edit details in some layouts
+6e57377 fixing dnd in census extra fields
+d7c5b58 admin: adding key navigation on int fields
+ba3ad3e Using the lastest underscore lib
+9b39522 Updating the cookie just after the ping
+3028123 removed debug console.log left in the code
+c5e68d1 Intercepting 403 response and disabling Authorization
+30f35be admin: checking question errors before election creation, adding checker service, and showing that info to the user
+6b9d327 admin: add some validation to questions
+845fd51 update angular ui.utils version
+86aea69 adding affix to admin questions too
+64d8456 admin: adding affix to census config etc
+fb84d38 admin: fixing email subject i18n
+d585817 extra fields: add some padding
+3342e74 admin extra fields: only show configuration relevant for each field type
+d48ee3d admin int fields: making inc options work when user writes and edits the field
+ce8ff37 improve flashing of info
+450fb76 booth: change background of demo booth warning ribbon, to make it more visible
+9d6c411 booth: in circles view, show always blank vote first
+4230839 booth: when a question allows to select one answer, allow to choose any without deselecting previous selection
+8cb1943 fix multi-line candidate public results
+9a8952a adding also support for more layouts in question results
+73c6080 add more layouts in results
+0d85940 fixing admin auth links
+404b925 fix small i18n thing
+4b85799 change help link in admin
+89cb9c8 remove +34 prefix on help
+8e4fa51 add agora voting title to the page
+b5fed2b commenting layouts and themes that cannot be currently used
+258ef48 fix i18n in admin
+0354f3c Redirecting to login when no url found
+61b42e2 loading theme in election public view
+9d4ef04 removing spcial treatment on results showing for pcandidates
+4d4fb2a i18n improvement on login
+4583fdd improving tlf handling
+b61cfdc fixing tlf field
+f931612 merge master
+179f366 remove registration link if census is closed
+
+election-orchestra
+##################
+
+/agora-tally/2015.06.11.changelog.txt
+8820e16 fix tally of elections with more than 10 questions in some platforms
+06548c2 Fix for off by one in 0-based answers index
+902312b using total_count instead of score in pairwise-beta for standarization
+4f17015 Pairwise beta
+bc74ee8 Merge pull request #3 from Findeton/next
+00d6c55 refactor code and generalize BordaNauru
+84f6181 fix tests to account for voters_by_position field
+301867b add borda-custom
+c5b9d3f add more details to borda results and changing how truncate ballot works
+dede369 fixing ballot overload, not counting it as null
+d1dfa7b add support for truncate
+d087836 adding support for specifying question indexes on tally
+9ad69c4 allowing double-quote character in the title of the election without crashing
+
+agora-results
+#############
+
+c313132 allow to set title
+411c70c add support for multipart_tally_plaintexts_joiner
+b8ca4a3 add initial support for pairwise-beta
+c88a7bb improving withdrawls management for parity and plurality-at-large
+63222ef allowing some more modifictions needed in some tally
+e8a160b allow to not-tally questions
+4d7d462 fixing crash in questions with no men
+a8b40d6 improving how truncate is done
+5c524d7 adding source question to be used by verifier
+1fde658 adding support for multiquestion parity zip
+6737a11 adding support for more primitives
+5eaa213 adding support for question duplication
+
+openstv
+#######
+5bea65b Merge pull request #1 from Findeton/next
+e7137bf add BordaCustom
+
+authapi
+#######
+
+b70bc47 Using authapi logger instead the django
+7446109 Fixed incorrect test_data.
+014b9d7 Merge pull request #14 from agoravoting/django-nose
+eb031f9 Added celery support for some tests.
+4a05d61 Added django-nose for execute test.
+d82085d Fixed test. Changed timer in loggind middleware.
+2dfe1d6 Only logging response with error status-code
+b0f400f Added request logging middleware
+21da60d Removed 5 and S for generate code.
+5468bc5 Improved extend_auth plugins for let to authenticate an account user.
+fdff054 Fixed test.
+5fdef80 fix code checking also in emails
+d103359 fix sms codes in lower case or multiple
+b187886 Fixed save ip in Message model.
+1018a7d Saved ip in Message model.
+e9007fd Fixed ExternalAPICheckAndSave contract
+322aa8c Removed contracts from ExternalAPICheckAndSave pipeline
+baeedc7 Send message to not auto active users
+3a539f1 real field name to the field pipeline execute method
+6aed0ed Generic external api soap
+d599830 User created using the admin are active by default
+344aa85 Update README.md
+e83cc2a Default settings with no plugins
+1957f44 external_soap return True by default
+9db1a3c Added dependency dateutil.
+118075d Same message for errors in registration and authentication.
+84b6f5b Fixed test.
+7fcbf92 adding filter bool and datetime support and using it in census filtering
+094b5ab adding initial filtering support in census
+f304ac3 adding date_joined to census
+80f64d1 Fixed some test: fixed problem when got email of admin authevent.
+d43f696 adding private dict field support
+57b6b05 No active users can't auth
+9942e11 Added permission required to census delete and add
+838bafe Fake external api call but almost real
+0c228a7 External API check and extra data with fake call
+5966619 extra_field pipeline test added testing DniChecker
+6461cbd working on contracts and registration-pipeline
+109c706 adding field register-pipeline support
+85e87a3 adding some documentation to the models
+7a88c54 Added dnie authmethod. Not functional yet
+9b50e66 Added table to messages log.
+4b8c3a5 adding support for census paginated filtering
+d169dd5 Removed unused variable in function send_sms_code.
+b80d00a Fixed test.
+e553b1c allowing up to 200 elements on each page
+06bde05 add pagination to census
+5bafab9 Added test for resend_auth_codes.
+fb66ff3 Merge pull request #13 from agoravoting/fixed_test
+83382c3 Fixed test.
+209170b fixing existing pipelines
+09da4dc adding support for resend auth codes
+e9b1809 Merge pull request #12 from agoravoting/fix_test
+50680c5 Fixed test
+7f37b8a fix dni field
+79a0d6f final version of new hmac checker
+0cc8f12 small indentation fix
+97695c7 rewritting ping code
+cfb7f4e fixing regex checking
+bf6f4d0 adding more finegrained hmac handling
+e463d5a fixing re checking
+42614f0 Append plugins settings to django settings.
+6492420 Merge pull request #11 from agoravoting/system_of_error
+f854c83 Merge pull request #10 from agoravoting/created_field_authevent
+c7f690b Changed system of error.
+5d21e3a Added create for fixtures.
+b079675 Added field created to AuthEvent.
+
+agora-tools
+###########
+
+9aa4921 allowing empty tree
+91b6533 Merge pull request #1 from agoravoting/plugin_system
+9e1ecb9 Create plugin system.
+59e33f1 Fixed credentials in config example.
+
+agora_elections
+###############
+
+c5e44d5 Added votes stats by day to the stats api
+41baff1 improving substantially ip filtering support
