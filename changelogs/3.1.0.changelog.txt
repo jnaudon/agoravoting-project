@@ -1,0 +1,139 @@
+agora-dev-box
+#############
+
+b28739c Config to set default language
+0d03040 Updated complete deployment doc
+cca6bc6 Added authorities to config
+8def717 Added domain to /etc/hosts
+1ccca60 ssl added to oneserver nginx template
+eefda57 Using public domain instead private ip for datastore
+ce77109 adding more security in sentry
+73969a7 adding support for the new url format
+
+agora-core-view
+###############
+
+2c31a93 Fixed ca translation
+b8e92e9 minor i18n fix
+0ff49d0 making election login success action configurable in the admin gui
+3a80564 add initial registration and authentication action support
+5a1d0b8 fixing final tweet vote link
+53345a4 fixing no images in circles view
+6231110 fixing typo in ca i18n
+93a3261 improving i18n cat
+dff055d fixing responsive booth text overflow and ca i18n
+cded3b3 fixing cup theme for election view
+dc1e3dd updating cup theme
+2de30b8 adding cups theme
+8613415 fix multi question directive for simple questions with no extra options
+e9e69cc some improvements on presets
+5100048 adding preset support
+51b3b75 fixing iphone/ipad issue
+9179d99 fixing checking of the number of max selected options on toggleTeam and adding blank vote checking
+7082f54 target _blank for verifier download
+42914e6 opening tar for verification in new tab
+fd1cf6f adding support for configuring verifier
+165ba81 updating ca i18n
+107ffcc adding support for force_allow_blank_vote in answer encoder
+1626b94 avBooth: add missing checks for no-tag extra_options candidates
+3c42ed4 adding support for forced blank vote support and for not-tagged max num candidates limits
+c7c1097 allowing usages where question.extra_options is not set
+42fbba1 updating bower.json to be more specific because some new versions of some packages break the build
+49369d2 fixing links in bcnencomu voting booth
+fc18451 adding missing dependency
+3029572 removing ahoram old layout support and adding support for more flexible accordion layout options
+df5c91e pcandidates-election: adding support for Image URL for candidates, and more sorting policies
+f65d793 changing pcandidates-election to be a question layout, with grouping
+0af5382 admin dashboard: removing specific results view, it's in the home
+ccabe09 updating links in header and footer
+fb27ae1 updating links in header and footer
+7ea659a adding support for html5 mode urls
+d9d579c improve i18n handling, adding support for saving lang in a cookie using querystring for setting lang, restricting available langs via config and setting other i18n details via avConfig
+9e6b9ee fixing import with tlfs
+223a30d Fixed error automatic logout each hour.
+
+election-orchestra
+##################
+
+42c75e2 fixing typo
+1ec09bd allowing larger election titles
+8530495 fixing taskqueue temporarily by not restarting old tasks when starting a queue
+ee21373 Added disk.gpi, comments on clear disk
+ae06f1f Adding disk usage measurement
+
+agora-tally
+###########
+
+c49c37b fix cup tally
+b211def add cup tally support
+492d24f being more precise on blank vote detection
+f6cfe7c fixing withdrawals support when number max of choices per ballots has been modified
+96f76a2 adding support for truncate-max-overload in agora-tally
+7a7dccd Fixed failing pairwise test
+
+agora-results
+#############
+
+1bb6472 improve parity support
+ea41cf5 add no output results format options
+6ac3253 printing also blank ballots and showing option texts
+684168a updating print ballots monkey patcher function, as it needed one more extra arg
+44a667b fixing issues with null votes in append_votes
+9b331d0 add cup tally support
+6bd92b8 support ephemeral tallies and append_ballots pipe
+56c2451 calculate per-question totals
+23b59ae fix parity removing the wrong person sometimes
+ee3f1ac adding optional help arg to all functions and adding podemos parity method
+d6ce966 updating requirements for next
+f3a51c1 adding global support for withdrawals
+2d5d7ac fixing with phantom_list
+96a0774 fixing support for removed candidates in sort
+2644e2f fixing the bcnencomu tally method to support cross-question teams
+7ef2811 adding support in proportion_rounded parity checking for phantom_precalc_list
+412296a adding support for applying proportions_rounded to only a specific set of questions
+2f88d24 adding support for what is needed for tallying bcnencomu consellers
+1bf5912 adding options for primarias congreso-senado podemos tallies
+
+authapi
+#######
+
+5bc8cbb Added authentication-action config to initial fixture
+c613480 checking correctly urls in success action url redirect
+502aa91 add registration and authentication action support
+46d7c93 fixing m_pwd
+1b708a1 allow redirects
+e34ff29 Fixed error with pipeline imports
+6e0c23a Changed readme travis to next branch
+c0a23ca Added authenticate pipeline in authmethods. Treated register-pipeline and authenticate-pipeline inside authmethods/utils.
+
+agora-tools
+###########
+
+246de7b making utils a module
+65f8072 adding admin format support
+77f52a5 add converter from csv to json
+aea727c allow empty description on questions, default to ''
+96d7500 adding empty corrections
+d681d62 add again support for tsv-blocks
+6802cc0 adding tag support
+2078c58 updating config updates to new format
+689c6bb import_csv: fixing urls import
+16addd2 changing from tsv to csv format, and adding extra data support
+dd83ab8 adding verify results
+
+agora_elections
+###############
+
+91e562f adding more preset options
+44001b6 adding preset support
+b6dbdf3 Fixed failing tests
+01a8ec3 admin: fix filtering
+7934062 Documented vote casting through admin.py
+3cb016b Documented vote casting through admin.py
+0240649 Added posting to vote callback url, needs test
+a8d0d03 adding support for some more extra options
+e068e5c adding support for more extra_options
+0c01932 adding support for more extra options in questions
+89f0d24 adding support for extra_options in election config
+30ebeca adding support for listing the removed hashes
+851d1a9 improve ip filtering support
