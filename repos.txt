@@ -1,4 +1,7 @@
-agora-core-view
+agora-gui-common
+agora-gui-admin
+agora-gui-booth
+agora-gui-elections
 agora_elections
 authapi
 agora-results
