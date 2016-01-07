@@ -71,7 +71,7 @@ durationestres: tiempo que durará la prueba de estrés
           </elementProp>
           <elementProp name="durationestres" elementType="Argument">
             <stringProp name="Argument.name">durationestres</stringProp>
-            <stringProp name="Argument.value">6</stringProp>
+            <stringProp name="Argument.value">60</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
