@@ -3,6 +3,7 @@ from time import time
 import hashlib
 
 shared_secret = b'SHARED' # Change this shared_secret by your shared_secret
+autheventid = 2
 users = 50000
 usersIni = 1
 
@@ -18,7 +19,7 @@ hmacs = []
 total = 0
 ini = time()
 while total < users:
-    hmacs.append(get_hmac(str(total+usersIni), "AuthEvent", 2, "vote"))
+    hmacs.append(get_hmac(str(total+usersIni), "AuthEvent", autheventid, "vote"))
     total += 1
 with open('datas.csv', 'w') as f:
     f.writelines('\n'.join(hmacs))
